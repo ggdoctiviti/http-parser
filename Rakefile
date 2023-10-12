@@ -13,7 +13,8 @@ task :compile do
         rescue
         end
     end
-    system 'cd ext && rake'
+    system 'rake'
+    #system 'cd ext && rake'
 end
 
 RSpec::Core::RakeTask.new(:test)
